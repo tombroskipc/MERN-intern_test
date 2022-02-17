@@ -22,7 +22,7 @@ export const getUsers = async (req, res) => {
                         }
                     ]
             }
-            const queryResponse = await User.find().select('-__v')
+            const queryResponse = await User.find(selectUser).select('-__v')
             console.log("Get Query success: ", queryResponse);
             res.status(200).json(queryResponse);
         } catch (error) {
