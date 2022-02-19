@@ -1,0 +1,79 @@
+[
+    {
+        "_id": "620e7a60095d962be77e4e6b",
+        "username": "john.doe",
+        "email": "john.iougfihujogfbuih@email.com",
+        "birthdate": "1977-04-23T00:00:00.000Z"
+    },
+    {
+        "_id": "620e7d90405d981c3ad3b61e",
+        "username": "john.smith",
+        "email": "john.smith@email.com",
+        "birthdate": "1994-09-07T00:00:00.000Z"
+    },
+    {
+        "_id": "620e7dc9405d981c3ad3b620",
+        "username": "john.cena",
+        "email": "john.cena@email.com",
+        "birthdate": "1977-04-23T00:00:00.000Z"
+    },
+    {
+        "_id": "62109d3573da501325c9b0ee",
+        "username": "Bret",
+        "email": "Sincere@april.biz",
+        "birthdate": "1977-04-23T00:00:00.000Z"
+    },
+    {
+        "_id": "62109d4273da501325c9b0f0",
+        "username": "Antonette",
+        "email": "Shanna@melissa.tv",
+        "birthdate": "1977-04-23T00:00:00.000Z"
+    },
+    {
+        "_id": "62109d5673da501325c9b0f2",
+        "username": "Samantha",
+        "email": "Nathan@yesenia.net",
+        "birthdate": "1977-04-23T00:00:00.000Z"
+    },
+    {
+        "_id": "62109d5f73da501325c9b0f4",
+        "username": "Karianne",
+        "email": "Julianne.OConner@kory.org",
+        "birthdate": "1977-04-23T00:00:00.000Z"
+    },
+    {
+        "_id": "62109d6873da501325c9b0f6",
+        "username": "Kamren",
+        "birthdate": "1977-04-23T00:00:00.000Z"
+    },
+    {
+        "_id": "62109da673da501325c9b0f9",
+        "username": "Leopoldo_Corkery",
+        "email": "Karley_Dach@jasper.info",
+        "birthdate": "1977-04-23T00:00:00.000Z"
+    },
+    {
+        "_id": "62109db473da501325c9b0fb",
+        "username": "Elwyn.Skiles",
+        "email": "Telly.Hoeger@billy.biz",
+        "birthdate": "1977-04-23T00:00:00.000Z"
+    },
+    {
+        "_id": "62109dbc73da501325c9b0fd",
+        "username": "Maxime_Nienow",
+        "email": "Sherwood@rosamond.me",
+        "birthdate": "1977-04-23T00:00:00.000Z"
+    },
+    {
+        "_id": "62109dc373da501325c9b0ff",
+        "username": "Delphine",
+        "email": "Chaim_McDermott@dana.io",
+        "birthdate": "1977-04-23T00:00:00.000Z"
+    },
+    {
+        "_id": "62109dc973da501325c9b101",
+        "username": "Moriah.Stanton",
+        "email": "Rey.Padberg@karina.biz",
+        "birthdate": "1977-04-23T00:00:00.000Z"
+    }
+]

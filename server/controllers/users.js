@@ -23,7 +23,7 @@ export const getUsers = async (req, res) => {
                     ]
             }
             const queryResponse = await User.find(selectUser).select('-__v')
-            console.log("Get Query success: ", queryResponse);
+            console.log("Query user success: ", queryResponse);
             res.status(200).json(queryResponse);
         } catch (error) {
             console.log(error.message)
@@ -74,11 +74,10 @@ export const postUser = async (req, res) => {
                                 reject(error.message)
                             }
                             else {
-                                if (result)
-                                    resolve(result)
-                                else {
-                                    resolve({message: "User not found", status: 404, user: user})
-                                }
+                                resolve(result ?
+                                    result :
+                                    { message: "User not found", status: 404, user: user }
+                                )
                             }
                         }
                     )
@@ -95,17 +94,17 @@ export const postUser = async (req, res) => {
         }
     }
     else {
-        // const user = new User(body);
-        // console.log('Post user: ', user);
-        // try {
-        //     await user.save();
-        //     console.log("Create User success: ", user);
-
-        //     res.status(201).json(user);
-        // }
-        // catch (error) {
-        //     res.status(409).json({ message: error.message });
-        // }
-        res.status(400).json({ message: "Invalid body" });
+        const user = new User(body);
+        console.log('Post user: ', user);
+        try {
+            await User.findByIdAndUpdate(body._id, user)
+            console.log("Update User success: ", user);
+        
+            res.status(201).json(user);
+        }
+        catch (error) {
+            res.status(409).json({ message: error.message });
+        }
+        
     }
 }
