@@ -10,9 +10,8 @@ function App() {
     let [inputBirthdateChange, setInputBirthdateChange] = useState('');
     let [toggleRefresh, setToggleRefresh] = useState(false);
     useEffect(() => {
-        console.log('inputSearch', inputSearch);
-        axios.get(`http://localhost:5000/users?name=${inputSearch}`)
-            .then(res => setUsers(res.data));
+        axios.get(`http://54.172.183.43:5000/users?name=${inputSearch}`)
+        .then(res => setUsers(res.data));
 
     }, [inputSearch, toggleRefresh]);
     const handleOnChange = (e) => {
@@ -33,7 +32,7 @@ function App() {
             birthdate: inputBirthdateChange
         }
         console.log('updatedUser: ', JSON.stringify(updatedUser));
-        axios.post("http://localhost:5000/users", updatedUser).then(function (response) {
+        axios.post("http://54.172.183.43:5000/users", updatedUser).then(function (response) {
             //handle success
             console.log(response);
             setToggleEditKey(0);
